@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Slider_Basic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxa-mS-mlp">
+                                <rect key="frame" x="16" y="15" width="343" height="30"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AP0-gM-f5a"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IgC-Eq-hlf">
+                                <rect key="frame" x="14" y="55" width="347" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="grl-Z8-Dsl"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="setUpRgbView:" destination="BYZ-38-t0r" eventType="valueChanged" id="v9v-cm-Q5k"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Je2-E6-ClL">
+                                <rect key="frame" x="16" y="114" width="343" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="g1K-Wx-mdC"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ujj-Jm-DU3">
+                                <rect key="frame" x="14" y="154" width="347" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="FnU-AT-WSd"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="setUpRgbView:" destination="BYZ-38-t0r" eventType="valueChanged" id="0bU-iJ-Kna"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZ2-fk-uDF">
+                                <rect key="frame" x="16" y="213" width="343" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ivr-oq-UGf"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nyb-g4-IcY">
+                                <rect key="frame" x="14" y="253" width="347" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="WyN-Zq-gji"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="setUpRgbView:" destination="BYZ-38-t0r" eventType="valueChanged" id="kMB-vP-dhg"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iM9-Qc-5Yl">
+                                <rect key="frame" x="16" y="312" width="343" height="339"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IgC-Eq-hlf" secondAttribute="trailing" constant="16" id="1ya-ej-bHI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RZ2-fk-uDF" secondAttribute="trailing" constant="16" id="3es-39-tRk"/>
+                            <constraint firstItem="IgC-Eq-hlf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4qS-jD-Lz8"/>
+                            <constraint firstItem="iM9-Qc-5Yl" firstAttribute="top" secondItem="nyb-g4-IcY" secondAttribute="bottom" constant="30" id="6SM-4W-bzJ"/>
+                            <constraint firstItem="iM9-Qc-5Yl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6Su-m4-Wqq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ujj-Jm-DU3" secondAttribute="trailing" constant="16" id="7z3-FD-0cn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nyb-g4-IcY" secondAttribute="trailing" constant="16" id="8EK-cQ-kH9"/>
+                            <constraint firstItem="uxa-mS-mlp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="BVO-bs-YPo"/>
+                            <constraint firstItem="Je2-E6-ClL" firstAttribute="top" secondItem="IgC-Eq-hlf" secondAttribute="bottom" constant="30" id="EH0-uP-Ff1"/>
+                            <constraint firstItem="ujj-Jm-DU3" firstAttribute="top" secondItem="Je2-E6-ClL" secondAttribute="bottom" constant="10" id="GK5-uO-yDo"/>
+                            <constraint firstItem="RZ2-fk-uDF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="JmD-fx-OFc"/>
+                            <constraint firstItem="IgC-Eq-hlf" firstAttribute="top" secondItem="uxa-mS-mlp" secondAttribute="bottom" constant="10" id="Nvi-u7-AaO"/>
+                            <constraint firstItem="ujj-Jm-DU3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ves-9U-Kof"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uxa-mS-mlp" secondAttribute="trailing" constant="16" id="XcT-Kr-P4E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iM9-Qc-5Yl" secondAttribute="bottom" constant="16" id="Znz-MP-T07"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Je2-E6-ClL" secondAttribute="trailing" constant="16" id="eOO-iW-n0a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iM9-Qc-5Yl" secondAttribute="trailing" constant="16" id="fmt-NB-guz"/>
+                            <constraint firstItem="RZ2-fk-uDF" firstAttribute="top" secondItem="ujj-Jm-DU3" secondAttribute="bottom" constant="30" id="nfr-oh-grR"/>
+                            <constraint firstItem="nyb-g4-IcY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ofH-Un-Q3V"/>
+                            <constraint firstItem="Je2-E6-ClL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tiB-Wn-jkv"/>
+                            <constraint firstItem="uxa-mS-mlp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tko-Wu-ONT"/>
+                            <constraint firstItem="nyb-g4-IcY" firstAttribute="top" secondItem="RZ2-fk-uDF" secondAttribute="bottom" constant="10" id="zaF-cm-UdO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueSlider" destination="nyb-g4-IcY" id="c5A-Wm-7Rs"/>
+                        <outlet property="blueView" destination="RZ2-fk-uDF" id="7w5-F9-ZLZ"/>
+                        <outlet property="greenSlider" destination="ujj-Jm-DU3" id="mVw-m0-8hL"/>
+                        <outlet property="greenView" destination="Je2-E6-ClL" id="bxy-ey-QoK"/>
+                        <outlet property="redSlider" destination="IgC-Eq-hlf" id="Nds-aS-1DQ"/>
+                        <outlet property="redView" destination="uxa-mS-mlp" id="esV-1h-YH4"/>
+                        <outlet property="rgbView" destination="iM9-Qc-5Yl" id="iX8-9s-uTa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="-28.335832083958024"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
